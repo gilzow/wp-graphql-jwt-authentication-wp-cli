@@ -44,13 +44,13 @@ class WPGraphQL_Auth_CLI_Command extends WP_CLI_Command {
      *  : Output just the token, overrides --format
      * ## EXAMPLE
      *
-     *     $ wp graphql_auth get-refresh-token admin password123
+     *     $ wp graphql_auth get-graphql-token admin password123
      *
      * @alias token
-     * @subcommand get-refresh-token
+     * @subcommand get-graphql-token
      * @when after_wp_load
      */
-    public function get_refresh_token( $args, $assoc_args ) {
+    public function get_graphql_token($args, $assoc_args ) {
         list($user, $pass) = $args;
 
         $options = wp_parse_args($assoc_args,$this->defaults);
