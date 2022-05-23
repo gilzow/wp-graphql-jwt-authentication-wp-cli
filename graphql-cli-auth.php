@@ -1,4 +1,16 @@
 <?php
+/**
+ * Plugin Name: WP-CLI GraphQL Auth Token Generation
+ * Plugin URI: https://platform.sh/
+ * Description: Enables the generation of JWT auth and refresh tokens from WPCLI
+ * Author: Platform.sh, Paul F. Gilzow
+ * Version: 0.1.0
+ * Requires at least: 4.9.0
+ * Tested up to: 5.9.0
+ * Requires PHP: 7.4
+ * License: GPL-3
+ * License URI: https://www.gnu.org/licenses/gpl-3.0.html
+ */
 use WP_CLI\Utils;
 if ( ! defined( 'ABSPATH' ) ) {
     exit; // Exit if accessed directly.
